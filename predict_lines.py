@@ -128,11 +128,32 @@ def build_model(device: str = "cpu") -> torch.nn.Module:
 
 
 def load_model(model_path: Path, device: str = "cpu") -> torch.nn.Module:
+    import requests
+
+    model_path = Path(model_path)
+
+    # Se il modello non esiste localmente → scaricalo da Google Drive
+    if not model_path.exists():
+        url = "https://drive.google.com/uc?export=download&id=1CcG7idf0yIbj697E7_JoBeP_BNJ6_KIi"
+        model_path.parent.mkdir(parents=True, exist_ok=True)
+        print(f"[MODEL] Scarico modello da Google Drive...\nURL: {url}")
+
+        r = requests.get(url)
+        r.raise_for_status()
+
+        with open(model_path, "wb") as f:
+            f.write(r.content)
+
+        print("[MODEL] Download completato.")
+
+    # Carica modello
     model = build_model(device=device)
-    state = torch.load(str(model_path), map_location=device)
+    state = torch.load(model_path, map_location=device)
     model.load_state_dict(state)
     model.eval()
     return model
+
+
 
 
 # -------------------------------------------------
