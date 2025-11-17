@@ -1,8 +1,9 @@
 services:
   - type: web
-    name: mano-lines-api
-    env: python
+    name: palm-api
+    env: docker
     plan: free
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn server:app --preload"
+    dockerfilePath: Dockerfile
     autoDeploy: true
+    envVars:
+      PORT: 10000
