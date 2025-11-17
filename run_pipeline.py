@@ -12,7 +12,7 @@ from generate_report import make_summary_image
 # ===============================
 # CONFIG (Render-friendly paths)
 # ===============================
-MODEL_PATH = Path("models/best_model.pth")
+MODEL_PATH = Path("models/best_unetpp_resnet50_resume_20251116_193959_dice0.799.pth")
 STATS_PATH = Path("data/palm_line_stats.json")
 RESULTS_ROOT = Path("results")
 

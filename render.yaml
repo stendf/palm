@@ -3,7 +3,5 @@ services:
     name: palm-api
     env: docker
     plan: free
-    dockerfilePath: Dockerfile
     autoDeploy: true
-    envVars:
-      PORT: 10000
+    dockerfilePath: Dockerfile
