@@ -1,13 +1,11 @@
 flask
 gunicorn
-
-numpy==1.26.4
 opencv-python-headless
+numpy==1.26.4
 scikit-image
 matplotlib
 pillow
 albumentations
-
 segmentation-models-pytorch==0.3.3
 requests
 
