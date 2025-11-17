@@ -1,0 +1,96 @@
+{
+  "fate": {
+    "area_mean": 1143.2726939970717,
+    "area_std": 587.6011796749622,
+    "length_mean": 105.35834553440702,
+    "length_std": 50.70495057758498,
+    "thickness_mean": 10.994919360307833,
+    "thickness_std": 1.163571565261705,
+    "curvature_mean": 0.11007300361159016,
+    "curvature_std": 0.026831367728319202,
+    "junctions_mean": 0.007320644216691069,
+    "junctions_std": 0.38256933032075896,
+    "complexity_mean": 9.77565484186521,
+    "complexity_std": 4.835621245821783,
+    "orientation_mean": -8.703334033436851,
+    "orientation_std": 59.5064964105462,
+    "samples": 2732
+  },
+  "head": {
+    "area_mean": 1592.3122254758418,
+    "area_std": 415.89211062921964,
+    "length_mean": 125.4300878477306,
+    "length_std": 34.27968061714353,
+    "thickness_mean": 12.751262343647085,
+    "thickness_std": 0.9427719613722996,
+    "curvature_mean": 0.09560640199411992,
+    "curvature_std": 0.01636594918643212,
+    "junctions_mean": 0.0,
+    "junctions_std": 0.0,
+    "complexity_mean": 9.923186316192929,
+    "complexity_std": 2.970412486387019,
+    "orientation_mean": -9.406916021960953,
+    "orientation_std": 128.283318581768,
+    "samples": 2732
+  },
+  "heart": {
+    "area_mean": 1650.270131771596,
+    "area_std": 469.67203934214234,
+    "length_mean": 135.88213762811128,
+    "length_std": 38.836877994451044,
+    "thickness_mean": 12.170020497331514,
+    "thickness_std": 0.9737002778457466,
+    "curvature_mean": 0.0986889622047812,
+    "curvature_std": 0.01878787779859641,
+    "junctions_mean": 0.0,
+    "junctions_std": 0.0,
+    "complexity_mean": 11.242775705508654,
+    "complexity_std": 3.390559549295383,
+    "orientation_mean": -4.383555985893447,
+    "orientation_std": 137.68418825486455,
+    "samples": 2732
+  },
+  "life": {
+    "area_mean": 1752.882869692533,
+    "area_std": 458.6164614957348,
+    "length_mean": 150.96156661786236,
+    "length_std": 42.466682162436314,
+    "thickness_mean": 11.662542748259165,
+    "thickness_std": 0.6982001223183398,
+    "curvature_mean": 0.10199605548548459,
+    "curvature_std": 0.015186982189704894,
+    "junctions_mean": 0.0,
+    "junctions_std": 0.0,
+    "complexity_mean": 13.027225923471367,
+    "complexity_std": 3.9905583830924694,
+    "orientation_mean": -7.482430090620255,
+    "orientation_std": 63.29761435579001,
+    "samples": 2732
+  },
+  "intersections": {
+    "fate-head": {
+      "mean_pixels": 99.58638360175695,
+      "occurrence_rate": 0.8056368960468521
+    },
+    "fate-heart": {
+      "mean_pixels": 33.678989751098094,
+      "occurrence_rate": 0.3678623718887262
+    },
+    "fate-life": {
+      "mean_pixels": 15.523792093704246,
+      "occurrence_rate": 0.12884333821376281
+    },
+    "head-heart": {
+      "mean_pixels": 1.6786237188872621,
+      "occurrence_rate": 0.012079062957540264
+    },
+    "head-life": {
+      "mean_pixels": 218.57869692532944,
+      "occurrence_rate": 0.6687408491947291
+    },
+    "heart-life": {
+      "mean_pixels": 0.0076866764275256225,
+      "occurrence_rate": 0.0007320644216691069
+    }
+  }
+}
