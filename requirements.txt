@@ -8,8 +8,6 @@ pillow
 albumentations
 segmentation-models-pytorch==0.3.3
 requests
-
-# Torch CPU ONLY (obbligatorio per Render free)
-torch==2.1.0+cpu
-torchvision==0.16.0+cpu
+torch==2.1.0
+torchvision==0.16.0
 --extra-index-url https://download.pytorch.org/whl/cpu
